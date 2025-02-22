@@ -1,6 +1,4 @@
-Aquí tienes una descripción para tu README:  
 
----  
 
 # 📌 Prototipo de Sitio Web en HTML y CSS  
 
