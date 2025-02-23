@@ -28,13 +28,14 @@ El prototipo debe incluir las siguientes páginas y funcionalidades:
 📁 Proyecto  
  ├── 📂 css/               # Archivos de estilos  
  ├── 📂 img/               # Imágenes del sitio  
- ├── 📂 js/                # Scripts opcionales (si es necesario)  
- ├── 📜 index.html         # Página principal  
- ├── 📜 login.html         # Pantalla de login  
- ├── 📜 registro.html      # Pantalla de registro  
- ├── 📜 productos.html     # Lista de productos  
- ├── 📜 comentarios.html   # Sección de comentarios  
- ├── 📜 admin.html         # CRUD de productos  
+ ├── 📂 js/                # Scripts opcionales (si es necesario)
+ ├── 📂 pages/
+ ├    └───── 📜 login.html         # Pantalla de login  
+ ├       └── 📜 registro.html      # Pantalla de registro  
+ ├       ├── 📜 productos.html     # Lista de productos  
+ ├       ├── 📜 comentarios.html   # Sección de comentarios  
+ ├       └── 📜 admin.html         # CRUD de productos
+ ├── 📜 index.html         # Página principal    
  └── README.md             # Documentación del proyecto  
 ```  
 
