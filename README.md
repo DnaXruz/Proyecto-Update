@@ -28,7 +28,7 @@ El prototipo debe incluir las siguientes páginas y funcionalidades:
 📁 Proyecto  
  ├── 📂 css/               # Archivos de estilos  
  ├── 📂 img/               # Imágenes del sitio  
- ├── 📂 js/                # Scripts opcionales (si es necesario)
+ ├── 📂 js/                # Scripts opcionales
  ├── 📂 pages/
  ├    └───── 📜 login.html         # Pantalla de login  
  ├       └── 📜 registro.html      # Pantalla de registro  
