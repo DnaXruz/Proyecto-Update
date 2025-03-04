@@ -25,10 +25,7 @@
                         <a class="nav-link active" href="/index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comentarios.html">Comentarios</a>
+                        <a class="nav-link" href="/pages/CRUDProductos.html">Agregar Productos</a>
                     </li>
                     <li class="nav-item custom-hover">
                         <a class="nav-link btn btn-outline-dark ms-2" href="/pages/login.html">Iniciar Sesión</a>
@@ -38,13 +35,80 @@
         </div>
     </nav>
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="col">
-            <h1 class="text-center mt-5">Pagina crud del proyecto</h1>
-            <p class="text-center"> Este es un ejemplo de pagina para mi proyecto</p>
-            <button class="btn btn-primary d-block mx-auto"> boton de algo</button>
-        </div>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Nuestros Productos</h2>
+    <div class="row" id="productos-container">
     </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Comentarios</h2>
+    <div class="card p-4">
+        <form id="comment-form">
+            <div class="mb-3">
+                <label for="comment-name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="comment-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment-text" class="form-label">Comentario</label>
+                <textarea class="form-control" id="comment-text" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Comentario</button>
+        </form>
+    </div>
+
+    <div class="mt-4">
+        <h4>Comentarios Recientes</h4>
+        <ul class="list-group" id="comment-list">
+        </ul>
+    </div>
+</div>
+
+<script>
+      function cargarProductos() {
+        const productos = JSON.parse(localStorage.getItem("productos")) || [];
+        const contenedor = document.getElementById("productos-container");
+        contenedor.innerHTML = "";
+
+        if (productos.length === 0) {
+            contenedor.innerHTML = "<p class='text-center'>No hay productos disponibles.</p>";
+            return;
+        }
+
+        productos.forEach(producto => {
+            const card = `
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.nombre}</h5>
+                            <p class="card-text">$${producto.precio}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            contenedor.innerHTML += card;
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", cargarProductos);
+
+    // Manejar envío de comentarios
+    document.getElementById("comment-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("comment-name").value;
+        const text = document.getElementById("comment-text").value;
+        
+        if (name && text) {
+            const commentList = document.getElementById("comment-list");
+            const commentItem = `<li class="list-group-item"><strong>${name}:</strong> ${text}</li>`;
+            commentList.innerHTML += commentItem;
+            
+            document.getElementById("comment-form").reset();
+        }
+    });
+
+</script>
     
     <script src="/js/bootstrap.min.js"></script>
 </body>
