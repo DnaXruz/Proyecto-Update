@@ -4,6 +4,10 @@
 
 Este proyecto es un prototipo de sitio web desarrollado con **HTML y CSS**, con la posibilidad de usar **Bootstrap** para facilitar el diseño y maquetación. No es necesario que sea funcional, ya que el objetivo principal es la representación visual de la interfaz.  
 
+### Ver PDF
+[![PDF Preview](https://github.com/DnaXruz/Proyecto-Prototipo/blob/main/instructivo.pdf)
+
+
 ## ✨ Requerimientos del Proyecto  
 
 El prototipo debe incluir las siguientes páginas y funcionalidades:  
