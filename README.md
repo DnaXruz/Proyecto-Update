@@ -4,9 +4,8 @@
 
 Este proyecto es un prototipo de sitio web desarrollado con **HTML y CSS**, con la posibilidad de usar **Bootstrap** para facilitar el diseño y maquetación. No es necesario que sea funcional, ya que el objetivo principal es la representación visual de la interfaz.  
 
-### Ver PDF
+### Ver PDF  
 [![PDF Preview](https://img.shields.io/badge/Ver%20PDF-%23FF5722.svg)](https://github.com/DnaXruz/Proyecto-Prototipo/blob/main/instructivo.pdf)
-
 
 ## ✨ Requerimientos del Proyecto  
 
@@ -28,23 +27,36 @@ El prototipo debe incluir las siguientes páginas y funcionalidades:
 
 ## 📂 Estructura del Proyecto  
 
-```plaintext
-📁 Proyecto  
- ├── 📂 css/               # Archivos de estilos  
- ├── 📂 img/               # Imágenes del sitio  
- ├── 📂 js/                # Scripts opcionales
- ├── 📂 pages/
- ├    └───── 📜 login.html         # Pantalla de login  
- ├       └── 📜 registro.html      # Pantalla de registro  
- ├       ├── 📜 productos.html     # Lista de productos  
- ├       ├── 📜 comentarios.html   # Sección de comentarios  
- ├       └── 📜 admin.html         # CRUD de productos
- ├── 📜 index.html         # Página principal    
- └── README.md             # Documentación del proyecto  
-```  
+```
+📁 Proyecto
+├── 📄 README.md
+├── 📦 components
+│   └── 📄 card.js
+├── 🎨 css
+│   ├── 📄 bootstrap.min.css
+│   └── 📄 styles.css
+├── 🖼️ img
+│   ├── 🖼️ DFE.png
+│   ├── 🖼️ computador.jpg
+│   ├── 🖼️ futurista.jpg
+│   ├── 🖼️ portada-1.jpg
+│   ├── 🖼️ portada-2.jpg
+│   ├── 🖼️ portada-3.jpg
+│   ├── 🖼️ rys.png
+│   ├── 🖼️ solutions.jpeg
+│   ├── 🖼️ solutions1.jpg
+│   └── 🖼️ urbano.png
+├── 📄 index.html
+├── 📄 instructivo.pdf
+├── 📁 js
+│   └── 📄 patterns.js
+└── 📁 pages
+    ├── 📄 CRUDProductos.html
+    ├── 📄 login.html
+    └── 📄 registro.html
+
+```
 
 ## 🎯 Objetivo  
 
-Este prototipo busca representar la estructura visual de un sitio web, facilitando su diseño y presentación sin necesidad de funcionalidad real.  🚀
-
----  
+Este prototipo busca representar la estructura visual de un sitio web, facilitando su diseño y presentación sin necesidad de funcionalidad real. 🚀
