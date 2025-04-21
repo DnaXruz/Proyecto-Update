@@ -28,31 +28,33 @@ El prototipo debe incluir las siguientes páginas y funcionalidades:
 ## 📂 Estructura del Proyecto  
 
 ```
-components/
-    └── card.js
-css/
-    ├── bootstrap.min.css
-    └── styles.css
-img/
-    ├── computador.jpg
-    ├── DFE.png
-    ├── futurista.jpg
-    ├── portada-1.jpg
-    ├── portada-2.jpg
-    ├── portada-3.jpg
-    ├── rys.png
-    ├── solutions.jpeg
-    ├── solutions1.jpg
-    └── urbano.png
-js/
-    └── patterns.js
-pages/
-    ├── CRUDProductos.html
-    ├── login.html
-    └── registro.html
-index.html
-instructivo.pdf
-README.md
+📁 Proyecto
+├── 📄 README.md
+├── 📦 components
+│   └── 📄 card.js
+├── 🎨 css
+│   ├── 📄 bootstrap.min.css
+│   └── 📄 styles.css
+├── 🖼️ img
+│   ├── 🖼️ DFE.png
+│   ├── 🖼️ computador.jpg
+│   ├── 🖼️ futurista.jpg
+│   ├── 🖼️ portada-1.jpg
+│   ├── 🖼️ portada-2.jpg
+│   ├── 🖼️ portada-3.jpg
+│   ├── 🖼️ rys.png
+│   ├── 🖼️ solutions.jpeg
+│   ├── 🖼️ solutions1.jpg
+│   └── 🖼️ urbano.png
+├── 📄 index.html
+├── 📄 instructivo.pdf
+├── 📁 js
+│   └── 📄 patterns.js
+└── 📁 pages
+    ├── 📄 CRUDProductos.html
+    ├── 📄 login.html
+    └── 📄 registro.html
+
 ```
 
 ## 🎯 Objetivo  
